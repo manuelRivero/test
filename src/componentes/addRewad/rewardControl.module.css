@@ -1,0 +1,18 @@
+.RewardControl{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    font-size: var(--smaller-font);
+    color: var(--azul)
+}
+
+
+.Btn{
+    background-color: var(--azul) !important;
+    width: 80% !important;
+    margin: auto;
+    border-radius: 10px !important;
+    font-weight: bold;
+}
+

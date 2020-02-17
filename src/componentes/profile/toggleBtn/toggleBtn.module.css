@@ -1,0 +1,30 @@
+.ToggleBtn{
+    width: 100%;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2rem;
+    line-height: 5px;
+    cursor: pointer;
+    font-size: .6em;
+    color: var(--azul);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.Close{
+    transform:translateX(-50%) rotate(180deg) ;
+    top:10px
+}
+
+.Open{
+    transform:translateX(-50%) rotate(0deg) ;
+    bottom: 10px;
+    
+}
+
+.Btn{
+    position: absolute;
+    left: 50%;
+}

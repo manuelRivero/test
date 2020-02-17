@@ -1,0 +1,18 @@
+.UserInfo{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2rem 2rem .5rem 2rem;
+    box-sizing: border-box;
+    color: var(--azul)
+}
+
+.UserInfo h4,p{
+    margin:0;
+    padding:0;
+}
+
+.UserInfo p{
+    font-size: .6em;
+}
+

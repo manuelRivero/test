@@ -1,0 +1,29 @@
+.InputGroup {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.InputArea {
+  display: block;
+  width: 100%;
+  margin: auto;
+  outline: none;
+  border: solid 1px #b1b0b1;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color:var(--azul)
+}
+
+.Label {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: var(--smaller-font);
+  color: #b1b0b1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-5px) translateX(15px);
+  padding: 0 10px;
+  text-transform: uppercase;
+}

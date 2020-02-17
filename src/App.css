@@ -1,38 +1,68 @@
 .App {
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #43f0e1;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  position:relative
+}
+.modal-dialog { max-width: 350px !important;  }
+.modal-content  {
+  border-radius: 15px !important;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+height: var(--card-min-Heigth);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.abrir{
+  animation: abrir 1s forwards !important;
+}
+
+.cerrar{
+  animation: cerrar 1s forwards !important;
+
+}
+
+@keyframes abrir{
+  to{
+      height: var(--card-max-Height)
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@keyframes cerrar{
+  from{
+    height: var(--card-max-Height)
   }
+  to{
+      height: var(--card-min-Heigth);
+  }
+}
+
+:root {  
+  --azul: rgb(27, 37, 66);
+  --amarillo: rgb(255, 223, 36);
+  --smaller-font: .8em;
+  --rojo:rgb(250, 100, 0);
+  --gris:#c2c2c2;
+  --card-max-Height: 400px;
+  --card-min-Heigth:230px
+ 
+  
+}
+@media (max-width: 600px) {
+  :root{
+    --card-max-Height: 100vh;
+    --card-min-Heigth:400px;
+  }
+  
+
+}
+
+.center {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate( -50%,-50%);
 }

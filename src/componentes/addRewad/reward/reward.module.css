@@ -1,0 +1,48 @@
+.Reward {
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  cursor: pointer;
+}
+.Circle {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.Selected .Circle {
+  border: solid 3px var(--rojo);
+}
+
+.Selected p {
+  color: var(--rojo)!important;
+}
+
+.Disabled {
+  cursor: not-allowed;
+  background-color: grey !important;
+}
+.Disabled + p{
+  color:gray;
+}
+.CX, .EX {
+  background-color: var(--azul);
+}
+
+.BD {
+  background-color: var(--amarillo);
+}
+
+
+.CX + p {
+  color: var(--azul);
+}
+
+.BD + p{
+  color:var(--amarillo);
+}
